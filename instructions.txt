@@ -1,0 +1,4 @@
+source ~/venvs/blinka_venv/bin/activate
+cd ~/code/rgb_matrix
+python play_japanese_background.py
+
