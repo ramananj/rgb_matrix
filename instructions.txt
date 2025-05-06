@@ -2,3 +2,11 @@ source ~/venvs/blinka_venv/bin/activate
 cd ~/code/rgb_matrix
 python play_japanese_background.py
 
+
+
+
+rpicam-vid -t 0 -n \
+           --width 1920 --height 1080 \
+           --framerate 30 \
+           --bitrate 4M --inline \
+           -o udp://192.168.86.39:5005?pkt_size=1316

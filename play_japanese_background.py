@@ -86,7 +86,7 @@ def main_display():
         "thunder": "weather_images/thunder,png",
         "clear": "weather_images/clear.png",
         "snow": "weather_images/snowy.png",
-        "fog clouds": "weather_images/cloudy.png",
+        "fog clouds mist": "weather_images/cloudy.png",
     }
     
 
@@ -162,12 +162,12 @@ def main_display():
             #     x += step
 
             # Then crop out the region holding the text
-            text_region_box = (0, top_height, 45, height)
+            text_region_box = (0, top_height, 47, height)
             text_region = canvas.crop(text_region_box)
 
             # Apply brightness or contrast
             enhancer = ImageEnhance.Brightness(text_region)
-            brighter_region = enhancer.enhance(7.0)  # e.g. double the brightness
+            brighter_region = enhancer.enhance(0.75)  # e.g. double the brightness
 
             # Paste back
             canvas.paste(brighter_region, text_region_box)
