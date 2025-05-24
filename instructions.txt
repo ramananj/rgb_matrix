@@ -10,3 +10,9 @@ rpicam-vid -t 0 -n \
            --framerate 30 \
            --bitrate 4M --inline \
            -o udp://192.168.86.39:5005?pkt_size=1316
+
+
+rpicam-vid -t 0 -n --width 1280 --height 720 \
+  --framerate 30 --bitrate 4M \
+  --inline --intra 1 \
+  -o udp://192.168.86.39:5005
