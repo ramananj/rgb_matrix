@@ -110,7 +110,7 @@ def main_display():
     ]
     font = ImageFont.truetype(FONT_PATH, size=FONT_SIZE)
 
-    goal_count = 0
+    goal_count = 231
     goal_event = threading.Event()
 
     # Start threads

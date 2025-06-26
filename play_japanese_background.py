@@ -89,11 +89,10 @@ def main_display():
         "fog clouds mist": "weather_images/cloudy.png",
     }
     
+    background_images = ["japanese_wave_pixel.png", "japanese_temple_2_pixel.png", "cherry_blossom_pixel.png"]
 
     width = 64
     height = 32
-
-    background_images = ["japanese_wave_pixel.png", "japanese_temple_2_pixel.png", "cherry_blossom_pixel.png"]
 
     canvas = Image.new('RGB', (width, height), (0, 0, 0))
     geometry = piomatter.Geometry(width=width, height=height,
