@@ -14,9 +14,9 @@ The ball was **still** zipping too fast, so we dialled it back again:
 Everything else is identical.
 
 Run with:
-```bash
+bash
 sudo python3 breakout_game.py
-```
+
 """
 import os
 import sys
@@ -60,7 +60,7 @@ class LEDDisplay:
 
 # ─────────────────────────── Gameplay Constants ─────────────────────────────
 W, H = 64, 32
-FPS = 10                     # ↓ from 30 (v1.3) and 60 (original)
+FPS = 15                    # ↓ from 30 (v1.3) and 60 (original)
 PADDLE_W, PADDLE_H = 16, 2
 BALL_SZ = 2
 BALL_SPEED = 1               # already minimal integer speed

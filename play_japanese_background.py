@@ -172,7 +172,7 @@ def main_display():
             canvas.paste(brighter_region, text_region_box)
         
             enhancer = ImageEnhance.Contrast(img)
-            high_contrast = enhancer.enhance(1.5)
+            high_contrast = enhancer.enhance(1.0)
             # posterized = high_contrast.convert("P", palette=Image.ADAPTIVE, colors=8).convert("RGB") 
             canvas.paste(high_contrast, (0,0))
             if weather_img is not None:
