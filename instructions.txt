@@ -3,6 +3,8 @@ cd ~/code/rgb_matrix
 python play_soccer_mode.py
 python play_japanese_background.py
 python pose_estimation.py --model=model_artifacts/model.tflite  --min-conf=0.5 --no-preview
+python rotary_encoder.py
+python breakout_game.py
 
 
 
